@@ -165,7 +165,14 @@ function initializeDiscourseCalendar(api) {
     const showAddToCalendar =
       $calendar.attr("data-calendar-show-add-to-calendar") !== "false";
 
-    return new window.FullCalendar.Calendar($calendar[0], {
+    return new window.FullCalendar.Calendar($calendar[0], {      
+      locale: I18n.locale,
+      buttonText: {
+        today: I18n.t("discourse_calendar.buttontext_today"),
+        month: I18n.t("discourse_calendar.buttontext_month"),
+        basicWeek: I18n.t("discourse_calendar.buttontext_basicweek"),
+        listNextYear: I18n.t("discourse_calendar.buttontext_listnextyear")
+      },
       timeZone,
       timeZoneImpl: "moment-timezone",
       nextDayThreshold: "06:00:00",
