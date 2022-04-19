@@ -166,7 +166,6 @@ function initializeDiscourseCalendar(api) {
       $calendar.attr("data-calendar-show-add-to-calendar") !== "false";
 
     return new window.FullCalendar.Calendar($calendar[0], {
-      plugins: [ rrulePlugin ],
       locale: I18n.locale,
       buttonText: {
         today: I18n.t("discourse_calendar.buttontext_today"),
