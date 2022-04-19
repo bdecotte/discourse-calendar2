@@ -17,6 +17,10 @@ en:
             topic_id:
               label: Topic ID
     discourse_calendar:
+      buttontext_today: "Today"
+      buttontext_month: "Month"
+      buttontext_basicweek: "Week"
+      buttontext_listnextyear: "List"
       invite_user_notification: "%{username} invited you to: %{description}"
       on_holiday: "On Holiday"
       holiday: "Holiday"
